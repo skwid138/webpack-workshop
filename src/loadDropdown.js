@@ -1,3 +1,5 @@
+/*jshint esversion: 6 */
+
 import $ from "jquery";
 
 let isCollapsed = true;
@@ -5,10 +7,10 @@ let isCollapsed = true;
 const setCollapsed = () => {
 	if (isCollapsed) {
 		$(".goals-content").addClass("is-collapsed");
-		$(".view-more").text("SHOW");
+		$(".view-more").text("SHOW Goals");
 	} else {
 		$(".goals-content").removeClass("is-collapsed");
-		$(".view-more").text("HIDE");
+		$(".view-more").text("HIDE Goals");
 	}
 };
 
