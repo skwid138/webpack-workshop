@@ -1,9 +1,11 @@
 var HtmlWebpackPlugin = require("html-webpack-plugin");
 
+const path = require('path');
+
 var webpackConfig = {
 	entry: "./src/index.js",
 	output: {
-		path: "build",
+		path: path.resolve(__dirname, 'build'),
 		filename: "bundle.js"
 	},
 	module: {
